@@ -365,7 +365,6 @@ function findLongestWord(sentence) {
   for (let i = 0; i < sentence.length; i += 1) {
     if (sentence[i] === ' ') {
       if (currentWordCount > maxWordCount) {
-        console.log(currentWordCount);
         maxWordCount = currentWordCount;
         maxWord = currentWord;
       }
@@ -409,7 +408,6 @@ function invertCase(str) {
   let newStr = '';
   for (let i = 0; i < str.length; i += 1) {
     if (/[a-zA-Z]/.test(str[i])) {
-      console.log('+');
       if (str[i].toUpperCase() === str[i]) newStr += str[i].toLowerCase();
       else newStr += str[i].toUpperCase();
     } else newStr += str[i];
